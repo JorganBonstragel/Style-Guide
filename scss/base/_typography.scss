@@ -1,5 +1,5 @@
 * {
-    font-family: 'Lato', sans-serif;
+    font-family:$font-main;
     color: #777;
     box-sizing: border-box;
   }
@@ -10,8 +10,12 @@
   
   a {
     text-decoration: none;
+    
   }
-
+  .link {
+    color: #51ddfc;
+    font-weight: 700;
+  }
   .headline-primary {
     color: #58e1c1;
     margin-left: 10px;
@@ -21,12 +25,6 @@
     font-weight: 300;
     color: #777;
   }
-  
-  .link {
-    color: #51ddfc;
-    font-weight: 700;
-  }
-  
   .blockquote {
     font-size: 1.5em;
     font-weight: 300;

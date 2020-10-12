@@ -338,7 +338,7 @@ template {
 }
 
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #777;
   box-sizing: border-box;
 }
@@ -351,6 +351,11 @@ a {
   text-decoration: none;
 }
 
+.link {
+  color: #51ddfc;
+  font-weight: 700;
+}
+
 .headline-primary {
   color: #58e1c1;
   margin-left: 10px;
@@ -359,11 +364,6 @@ a {
 .headline-secondary {
   font-weight: 300;
   color: #777;
-}
-
-.link {
-  color: #51ddfc;
-  font-weight: 700;
 }
 
 .blockquote {
@@ -459,7 +459,7 @@ a {
   padding: 10px 0;
   display: block;
   width: 100%;
-  transition: background-color .2s ease-in-out,  color .2s ease-in-out;
+  transition: background-color .2s ease-in-out,  color .2s ease-in-out;
 }
 
 .nav a:hover {
@@ -481,27 +481,47 @@ a {
   background-color: #51ddfc;
 }
 
+.default:hover {
+  background-color: #83e7fd;
+}
+
 .error {
   background-color: #e4757a;
+}
+
+.error:hover {
+  background-color: #eca0a3;
 }
 
 .info {
   background-color: #927bc1;
 }
 
+.info:hover {
+  background-color: #af9ed1;
+}
+
 .success {
   background-color: #63cc82;
+}
+
+.success:hover {
+  background-color: #89d9a1;
 }
 
 .warning {
   background-color: #fd7856;
 }
 
+.warning:hover {
+  background-color: #fea088;
+}
+
 .form {
   flex-basis: 100%;
 }
 
-.input {
+.form input {
   display: block;
   width: 94%;
   margin: 10px auto 0;
@@ -510,7 +530,7 @@ a {
   border-bottom: 5px solid #58e1c1;
 }
 
-.hidden {
+.form label {
   position: absolute;
   left: -10000px;
   top: auto;
